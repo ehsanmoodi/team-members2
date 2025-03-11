@@ -1,0 +1,105 @@
+.wp-block-moodi-team-members2 {
+
+	.block {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	.no-data {
+		font-size: 1rem;
+		font-weight: 400;
+		margin-block-start: 0;
+		margin-block-end: 0;
+	}
+
+	.title {
+		font-weight: 700;
+		margin-block-start: 0;
+		margin-block-end: 0;
+	}
+
+	.members {
+		gap: 1rem;
+
+		.member {
+			display: flex;
+			gap: 0.75rem;
+			transition: box-shadow 0.3s ease;
+
+			&__image {
+				flex-shrink: 0;
+				border-radius: 100%;
+				overflow: hidden;
+
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+
+			&__meta {
+				flex-grow: 1;
+				display: flex;
+				gap: 0.25rem;
+				font-size: 1.15rem;
+				font-weight: 500;
+
+				@media screen and (min-width: 768px) {
+					gap: 0.75rem;
+				}
+
+				span {
+					font-size: 0.8rem;
+					font-weight: 300;
+					opacity: 0.75;
+				}
+			}
+		}
+
+		&--list {
+			display: flex;
+			flex-direction: column;
+
+			.member {
+
+				&__image {
+					width: 32px;
+					height: 32px;
+				}
+
+				&__meta {
+					align-items: center;
+				}
+			}
+		}
+
+		&--grid {
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+
+			@media screen and (min-width: 768px) {
+				grid-template-columns: repeat(2, 1fr);
+			}
+
+			.member {
+				border: 1px solid rgba(0, 0, 0, 0.1);
+				border-radius: 12px;
+				padding: 12px;
+
+				&:hover {
+					box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+				}
+
+				&__image {
+					width: 60px;
+					height: 60px;
+				}
+
+				&__meta {
+					flex-direction: column;
+				}
+			}
+		}
+	}
+}

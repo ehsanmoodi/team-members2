@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "moodi/team-members2",
+	"version": "0.1.0",
+	"title": "Team Members2",
+	"category": "widgets",
+	"icon": "admin-users",
+	"description": "Display the list of team members",
+	"example": {},
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "Team Members"
+		},
+		"showAsGrid": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"supports": {
+		"interactivity": true,
+		"color": {
+			"background": false,
+			"text": true
+		},
+		"typography": {
+			"fontSize": true
+		}
+	},
+	"textdomain": "team-members2",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}
