@@ -1,5 +1,5 @@
 import { __experimentalVStack as VStack } from '@wordpress/components';
-import { PropsWithChildren } from 'react';
+import React, { PropsWithChildren } from 'react';
 import { Title } from './title';
 
 type BlockProps = PropsWithChildren< {

@@ -1,3 +1,4 @@
+import React from 'react';
 import { AVATAR_PLACEHOLDER } from '../utils/constants';
 
 type MemberProps = {

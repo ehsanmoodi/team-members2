@@ -1,3 +1,4 @@
+import React from 'react';
 import { ToggleControl } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 

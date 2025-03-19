@@ -1,3 +1,4 @@
+import React from 'react';
 import { useBlockProps } from '@wordpress/block-editor';
 import { Attributes } from './models/wordpress';
 import { Settings } from './components/settings';
